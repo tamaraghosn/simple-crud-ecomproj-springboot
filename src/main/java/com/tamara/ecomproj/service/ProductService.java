@@ -30,6 +30,7 @@ public class ProductService {
         product.setImageName(imageFile.getName());
         product.setImageType(imageFile.getContentType());
         product.setImageData(imageFile.getBytes());
+        System.out.println(product.getName());
         return repo.save(product);
     }
 
