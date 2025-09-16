@@ -37,6 +37,7 @@ public class ProductService {
         product.setImageName(imageFile.getName());
         product.setImageType(imageFile.getContentType());
         product.setImageData(imageFile.getBytes());
+        
         return repo.save(product);
 
     }
